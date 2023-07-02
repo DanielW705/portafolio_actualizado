@@ -2,13 +2,13 @@
 /* Fuente anonymus Pro sin bold */
 @font-face {
   font-family: "Anonymus Pro";
-  src: url("../assets/fonts/Anonymice\ Powerline.ttf");
+  src: url("./fonts/Anonymice_Powerline_Bold.ttf") format("opentype");
   font-weight: normal;
 }
 /* Fuenta anonymus pro con bold  */
 @font-face {
   font-family: "Anonymus Pro Bold";
-  src: url("../assets/fonts/Anonymice\ Powerline.ttf");
+  src: url("./fonts/Anonymice_Powerline.ttf") format("opentype");
   font-weight: bold;
 }
 /************/
@@ -16,5 +16,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Anonymus Pro", "Anonymus Pro Bold", Arial;
+  font-size: 1rem;
 }
 /***Pantalla de presentacion***/
