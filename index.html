@@ -9,46 +9,109 @@
 </head>
 
 <body>
+    <!-- <h1>Hola mundo</h1> -->
     <!-- en el main se va a colocar el fondo que es animado de las estrellas -->
     <main class="fondo">
         <!--En esta seccion se va colocar mi presentacion (nombre, frase, etc.) en esta tambien se podra descargar el curriculum vitae  -->
         <section class="section presentacion">
             <!-- Cabecera donde se mostrara los iconos para enviar a la pagina o a cierta informacion -->
-            <header>
+            <header
+            class="cabecera_pagina">
                 <!-- Boton para enviar a linkedin -->
                 <span 
                 class="cuerpo_boton">
                     <iframe
-                    title="linkedin"
                     class="icono-1"
+                    src="./assets/icons/icons8-linkedin-100.svg"
+                    title="linkedin"
                     width="100"
-                    height="100"
-                    src="./assets/icons/icons8-linkedin-100.svg">
+                    height="100">
                     </iframe>
                 </span>
                 <!-- Boton para enviar a github -->
                 <span class="cuerpo_boton">
                     <iframe
-                    title="github"
                     class="icono-2"
+                    src="./assets/icons/github-mark_dark.svg"
+                    title="github"
                     width="100"
-                    height="100"
-                    src="./assets/icons/github-mark_dark.svg">
+                    height="100">
                     </iframe>
                 </span>
                 <!-- Boton para enviar a gmail -->
                 <span 
                 class="cuerpo_boton">
                     <iframe
-                    title="gmail"
                     class="icono-3"
+                    src="./assets/icons/icons8-gmail-100.svg"
+                    title="gmail"
                     width="100"
-                    height="100"
-                    src="./assets/icons/icons8-gmail-100.svg">
+                    height="100">
                     </iframe>
                 </span>
             </header>
-
+            <article
+            class="cuerpo_panel">
+                <h1
+                class="nombre_titulo">
+                Gonzalez Martinez Daniel
+                </h1>
+                    <p 
+                    class="parrafo_presentacion">
+                    Desarrollando mi conocimiento
+                    </p>
+                    <p 
+                    class="texto_contacto">
+                    Si quieres ponerte en contacto conmigo enviame un correo a
+                        <a
+                        class="link_correo" 
+                        href="">
+                        danielmtzlpz95@gmail.com
+                        </a>
+                    </p>
+                    <!--Con este boton podras descargar el archivo del curriculum vitae -->
+                    <div 
+                    class="area_boton">
+                        <a 
+                        class="boton_descarga"
+                        href="" >
+                        <span 
+                        class="interior_boton">
+                            Descargar CV
+                        </span>
+                        </a>
+                </div>
+            </article>
+            <!--Este es el pie de pagina, el donde el usuario podra cambiar de pestaña  -->
+            <footer 
+            class="pie_de_pagina">
+                <nav
+                class="area_navegacion">
+                    <ul
+                    class="lista_componentes">
+                        <li
+                        class="seleccionador">
+                        <!--Este se debe dejar vacio porque es el seleccionador de la barra de navegacion  -->
+                        </li>
+                        <li
+                        class="opcion a seleccionado">
+                        Presentacion
+                        </li>
+                        <li
+                        class="opcion b">
+                        Sobre mi
+                        </li>
+                        <li
+                        class="opcion c">
+                        Proyectos
+                        </li>
+                        <li
+                        class="opcion d">
+                        Habilidades
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
         </section>
         <!--En esta seccion se va a mostrar una pequeña terjeta donde estara una foto mia y una breve descripcion  -->
         <section class="section informacion">
