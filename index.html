@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="CSS/site.css">
 </head>
 
-<body>
-    <!-- <h1>Hola mundo</h1> -->
-    <!-- en el main se va a colocar el fondo que es animado de las estrellas -->
-    <main class="fondo">
+
+<!-- Lo coloque en el body para mas facilidad al programar -->
+<body 
+id="particles-js">
+    <main 
+     class="cuerpo">
         <!--En esta seccion se va colocar mi presentacion (nombre, frase, etc.) en esta tambien se podra descargar el curriculum vitae  -->
-        <section class="section presentacion">
+        <section 
+        class="vista">
+
+        <article 
+        class="article presentacion">
             <!-- Cabecera donde se mostrara los iconos para enviar a la pagina o a cierta informacion -->
             <header
             class="cabecera_pagina">
@@ -112,26 +118,30 @@
                     </ul>
                 </nav>
             </footer>
-        </section>
+        </article>
         <!--En esta seccion se va a mostrar una pequeña terjeta donde estara una foto mia y una breve descripcion  -->
-        <section class="section informacion">
+        <article class="article informacion">
 
-        </section>
+        </article>
         <!--En esta seccion se mostrara todos los proyectos que e realizado  -->
-        <section class="section proyectos">
+        <article class="article proyectos">
 
-        </section>
+        </article>
         <!-- En esta seccion se mostrara todos los lenguages, frameworks y herramientas que conozco -->
-        <section class="section habilidades">
+        <article class="article habilidades">
 
-        </section>
+        </article>
         <!-- Se terminara con una tarjeta de contacto y el linkedin para contacto -->
-        <section class="section contacto">
+        <article class="article contacto">
 
-        </section>
+        </article>
+    </section>
+
     </main>
 
-    <script type="text/javaScript" src="JS/site.js"></script>
+    <script src="./JS/particles.js" ></script>
+    <script src="./JS/app.js"></script>
+    <script type="text/javaScript" src="./JS/site.js"></script>
 </body>
 
 </html>

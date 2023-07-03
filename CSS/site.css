@@ -21,4 +21,58 @@ body {
   font-family: "Anonymus Pro", "Anonymus Pro Bold", Arial;
   font-size: 1rem;
 }
-/***Pantalla de presentacion***/
+/* Fondo personalizado con particles js */
+
+#particles-js {
+  background-color: #0e0e0e;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* Cuerpo principal */
+.cuerpo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*estilos para limitar la vista */
+.cuerpo .vista {
+  position: relative;
+  border: 5px solid green;
+  width: 80%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+/***Pantalla de cada uno de los articulos***/
+.cuerpo .vista .article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+}
+/* Estilos para presentacion */
+.cuerpo .vista .presentacion {
+  left: 0%;
+}
+/* Estilos para informacion */
+.cuerpo .vista .informacion {
+  left: 125%;
+}
+/* Estilos para proyectos */
+.cuerpo .vista .proyectos {
+  left: 250%;
+}
+/* Estilos para habilidades */
+.cuerpo .vista .habilidades {
+  left: 375%;
+}
+/* Estilos para contacto */
+.cuerpo .vista .contacto {
+  left: 500%;
+}
