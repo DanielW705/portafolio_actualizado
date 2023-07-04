@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Anonymus Pro";
   src: url("./fonts/Anonymice_Powerline_Bold.ttf") format("opentype");
-  font-weight: normal;
+  font-weight: 100;
 }
 /* Fuenta anonymus pro con bold  */
 @font-face {
@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Anonymus Pro", "Anonymus Pro Bold", Arial;
+  font-family: "Anonymus Pro Bold", "Anonymus Pro", Arial;
   font-size: 1rem;
 }
 /* Fondo personalizado con particles js */
@@ -57,6 +57,17 @@ body {
   /* border: 3px solid red; */
   color: #fff;
 }
+/*Estilos para todas las cabeceras  */
+.cuerpo .vista .article .cabecera_pagina {
+  border-top: 5px rgba(124, 192, 236, 0.75) solid;
+  background-color: rgba(35, 35, 35, 0.85);
+}
+/*Estilos para todos los cuerpos de todos los paneles  */
+.cuerpo .vista .article .cuerpo_panel {
+  background-color: rgba(35, 35, 35, 0.85);
+  border-left: 5px rgba(124, 192, 236, 0.75) solid;
+  border-right: 5px rgba(124, 192, 236, 0.75) solid;
+}
 /* Estilos para presentacion */
 .cuerpo .vista .presentacion {
   left: 0%;
@@ -64,9 +75,8 @@ body {
   grid-template-rows: 10% 80% 10%;
   grid-template-columns: 1fr;
 }
-.cuerpo .vista .presentacion .cabecera_pagina {
-  border-top: 5px rgba(124, 192, 236, 0.75) solid;
-  background-color: rgba(35, 35, 35, 0.85);
+/*Estilos para la cabecera de la pagina de presentacion */
+.cuerpo .vista .presentacion .cabecera_presentacion {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -74,6 +84,8 @@ body {
   justify-items: center;
   padding: 0 10%;
 }
+
+/* Estilos para cada uno de los botones */
 
 .cuerpo .vista .presentacion .cabecera_pagina .cuerpo_boton {
   background-color: #383f51;
@@ -89,16 +101,110 @@ body {
   cursor: pointer;
 }
 
-.cuerpo .vista .presentacion .cabecera_pagina .cuerpo_boton:hover {
-  box-shadow: 0.1px -12px 12px -3px #38627b inset;
-  transform: scale(1.2);
-}
+/*Estilos para el icono o la imagen SVG */
 
 .cuerpo .vista .presentacion .cabecera_pagina .cuerpo_boton .icono {
   width: 40%;
   height: 85%;
 }
+/*Estilos para animar los botones cuando se pasa el cursor encima */
 
+.cuerpo .vista .presentacion .cabecera_pagina .cuerpo_boton:hover {
+  box-shadow: 0.1px -12px 12px -3px #38627b inset;
+  transform: scale(1.2);
+}
+
+/*Distribucion del cuerpo, en la presentacion */
+.cuerpo .vista .presentacion .cuerpo_panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 17.5% 17.5% 17.5% 17.5% 30%;
+  justify-items: center;
+  align-items: center;
+  padding: 5% 0 0 2%;
+}
+
+/*Texto y tamaño del titulo de la presentacion */
+.cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
+  font-family: "Anonymus Pro";
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
+  font-size: 2rem;
+}
+
+.cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
+  font-size: 2.5rem;
+}
+
+.cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
+  font-size: 2.6rem;
+}
+
+.cuerpo .vista .presentacion .cuerpo_panel .texto_contacto .link_correo {
+  color: #8ad9ea;
+}
+
+.cuerpo
+  .vista
+  .presentacion
+  .cuerpo_panel
+  .texto_contacto
+  .link_correo:visited {
+  color: rgba(0, 187, 45, 0.9);
+}
+
+.cuerpo .vista .presentacion .cuerpo_panel .area_boton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  /* color: #c8f3fe; */
+}
+
+.cuerpo .vista .presentacion .cuerpo_panel .area_boton .boton_descarga {
+  color: #c8f3fe;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 8px solid #383f51;
+  width: 30%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5%;
+}
+.cuerpo
+  .vista
+  .presentacion
+  .cuerpo_panel
+  .area_boton
+  .boton_descarga
+  .interior_boton {
+  background-color: #383f51;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -12px 12px -3px #38627b inset;
+  transition: 0.5s;
+}
+.cuerpo
+  .vista
+  .presentacion
+  .cuerpo_panel
+  .area_boton
+  .boton_descarga:hover
+  .interior_boton {
+  transform: scale(1.02);
+}
 /* Estilos para informacion */
 .cuerpo .vista .informacion {
   left: 125%;
