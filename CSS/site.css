@@ -68,6 +68,12 @@ body {
   border-left: 5px rgba(124, 192, 236, 0.75) solid;
   border-right: 5px rgba(124, 192, 236, 0.75) solid;
 }
+/*Estilo para todos los footers*/
+.cuerpo .vista .article .pie_de_pagina {
+  border-bottom: 5px rgba(124, 192, 236, 0.75) solid;
+  background-color: rgba(35, 35, 35, 0.85);
+}
+
 /* Estilos para presentacion */
 .cuerpo .vista .presentacion {
   left: 0%;
@@ -79,7 +85,7 @@ body {
 .cuerpo .vista .presentacion .cabecera_presentacion {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   padding: 0 10%;
@@ -118,7 +124,7 @@ body {
 .cuerpo .vista .presentacion .cuerpo_panel {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 17.5% 17.5% 17.5% 17.5% 30%;
+  grid-template-rows: repeat(4, 17.5%) 30%;
   justify-items: center;
   align-items: center;
   padding: 5% 0 0 2%;
@@ -131,22 +137,23 @@ body {
   font-weight: bold;
 }
 
+/*Estilizado del tamaño del texto */
 .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
   font-size: 2rem;
 }
-
+/*Estilizado del tamaño del texto  */
 .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
   font-size: 2.5rem;
 }
-
+/*Estilizado del tamaño del texto  */
 .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
   font-size: 2.6rem;
 }
-
+/*Estilizado del color del texto*/
 .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto .link_correo {
   color: #8ad9ea;
 }
-
+/*Estilizado cuando es visitado*/
 .cuerpo
   .vista
   .presentacion
@@ -155,7 +162,7 @@ body {
   .link_correo:visited {
   color: rgba(0, 187, 45, 0.9);
 }
-
+/*Estilizado del area del boton*/
 .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
   width: 100%;
   height: 100%;
@@ -165,7 +172,7 @@ body {
   font-size: 3rem;
   /* color: #c8f3fe; */
 }
-
+/*Estilizado del espacio exterior del boton */
 .cuerpo .vista .presentacion .cuerpo_panel .area_boton .boton_descarga {
   color: #c8f3fe;
   text-decoration: none;
@@ -179,6 +186,7 @@ body {
   align-items: center;
   padding: 0.5%;
 }
+/*Estilizado del tamaño del espacio interior del boton  */
 .cuerpo
   .vista
   .presentacion
@@ -193,9 +201,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px -12px 12px -3px #38627b inset;
   transition: 0.5s;
 }
+/*Estilizado del cuando se pasa el mouse*/
 .cuerpo
   .vista
   .presentacion
@@ -204,6 +212,77 @@ body {
   .boton_descarga:hover
   .interior_boton {
   transform: scale(1.02);
+  box-shadow: 0px -12px 12px -3px #38627b inset;
+}
+.cuerpo .vista .presentacion .pie_de_pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpo .vista .presentacion .pie_de_pagina .area_navegacion {
+  width: 70%;
+  height: 100%;
+}
+.cuerpo
+  .vista
+  .presentacion
+  .pie_de_pagina
+  .area_navegacion
+  .lista_componentes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.cuerpo
+  .vista
+  .presentacion
+  .pie_de_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionador {
+  position: absolute;
+  left: 3%;
+  content: " ";
+  border-bottom: 3px solid rgba(138, 217, 234, 0.85);
+  top: 75%;
+  width: 15%;
+  box-shadow: 0 -4px 10px 1px rgba(138, 217, 234, 0.85);
+}
+.cuerpo
+  .vista
+  .presentacion
+  .pie_de_pagina
+  .area_navegacion
+  .lista_componentes
+  li {
+  list-style: none;
+}
+.cuerpo
+  .vista
+  .presentacion
+  .pie_de_pagina
+  .area_navegacion
+  .lista_componentes
+  .opcion {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.cuerpo
+  .vista
+  .presentacion
+  .pie_de_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionado {
+  color: #8ad9ea;
+  /* box-shadow: 0 10px 20px rgba(138, 217, 234, 0.45); */
 }
 /* Estilos para informacion */
 .cuerpo .vista .informacion {
