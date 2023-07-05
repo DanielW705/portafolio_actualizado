@@ -1,6 +1,6 @@
 <svg width="1350" height="120" xmlns="http://www.w3.org/2000/svg">
   <!-- Lados laterales -->
-  <polygon points="150,0 1198,0 1278,120 70,120" fill="rgba(35, 35, 35, 1)" />
+  <polygon points="150,0 1198,0 1278,120 70,120" fill="rgba(35, 35, 35,0.85)" />
   <!-- Lado inferior -->
   <line x1="150" y1="0" x2="1198" y2="0" stroke="rgba(124, 192, 236, 0.75)" stroke-width="8" />
   <!-- Lateral derecho -->
