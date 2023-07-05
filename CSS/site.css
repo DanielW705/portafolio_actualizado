@@ -59,19 +59,60 @@ body {
 }
 /*Estilos para todas las cabeceras  */
 .cuerpo .vista .article .cabecera_pagina {
-  border-top: 5px rgba(124, 192, 236, 0.75) solid;
-  background-color: rgba(35, 35, 35, 0.85);
+  /* border-top: 5px rgba(124, 192, 236, 0.75) solid; */
+
+  /* border-top: 5px linear-gradient(rgba(124, 192, 236, 0.75) 85%, transparent 15%) solid; */
+  /* background-color: rgba(35, 35, 35, 0.85); */
+  /* background: linear-gradient(
+    30deg,
+    transparent 15%,
+    rgba(35, 35, 35, 0.85) 15%,
+    rgba(35, 35, 35, 0.85) 80%,
+    transparent 5%
+  ); */
+  /* background: conic-gradient(
+    from 45deg at 50% 50%,
+    #ff5722,
+    #ff5722 25%,
+    #ff5722 75%,
+    #ff5722 100% */
+  /* background-image: url(../assets/trapecio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  position: relative;
+}
+/*Configuracion para colocar los triangulos, en la parte superior sin usar un linear gradient */
+.cuerpo .vista .article .cabecera_pagina .fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 /*Estilos para todos los cuerpos de todos los paneles  */
 .cuerpo .vista .article .cuerpo_panel {
-  background-color: rgba(35, 35, 35, 0.85);
-  border-left: 5px rgba(124, 192, 236, 0.75) solid;
-  border-right: 5px rgba(124, 192, 236, 0.75) solid;
+  /* background-color: rgba(35, 35, 35, 0.85); */
+  border: 5px transparent solid;
+  background: linear-gradient(rgba(35, 35, 35, 1), rgba(35, 35, 35, 1))
+      no-repeat,
+    linear-gradient(
+      to left,
+      rgba(124, 192, 236, 0.75) 5%,
+      rgba(35, 35, 35, 0.85) 5%,
+      rgba(35, 35, 35, 0.85) 95%,
+      rgba(124, 192, 236, 0.75) 95%
+    );
 }
 /*Estilo para todos los footers*/
 .cuerpo .vista .article .pie_de_pagina {
-  border-bottom: 5px rgba(124, 192, 236, 0.75) solid;
-  background-color: rgba(35, 35, 35, 0.85);
+  /* border-bottom: 5px rgba(124, 192, 236, 0.75) solid;
+  background-color: rgba(35, 35, 35, 0.85); */
+  position: relative;
+}
+.cuerpo .vista .article .pie_de_pagina .fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
 }
 
 /* Estilos para presentacion */
