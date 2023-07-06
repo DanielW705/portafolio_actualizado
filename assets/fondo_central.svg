@@ -1,0 +1,14 @@
+<svg width="2010" height="920" xmlns="http://www.w3.org/2000/svg">
+    <!--Tapa del rectangulo izquierdo  -->
+    <line x1="0" x2="108" y1="0" y2="0" stroke="rgba(124, 192, 236, 0.75)" stroke-width="12" stroke-linecap="round"/>
+    <!-- piso del rectangulo izquierdo -->
+    <line x1="0" x2="108" y1="920" y2="920" stroke="rgba(124, 192, 236, 0.75)" stroke-width="12" stroke-linecap="round"/>
+    <!--Pared izquierda del lado izquierod  -->
+    <line x1="0" x2="0" y1="0" y2="920" stroke="rgba(124, 192, 236, 0.75)" stroke-width="12" stroke-linecap="round"/>
+    <!--Tapa del rectangulo derecho  -->
+    <line x1="2010" x2="1902" y1="0" y2="0" stroke="rgba(124, 192, 236, 0.75)" stroke-width="12" stroke-linecap="round"/>
+    <!-- piso del rectangulo derecho -->
+    <line x1="2010" x2="1902" y1="920" y2="920" stroke="rgba(124, 192, 236, 0.75)" stroke-width="12" stroke-linecap="round"/>
+    <!--Pared derecha del lado derecho  -->
+    <line x1="2010" x2="2010" y1="0" y2="920" stroke="rgba(124, 192, 236, 0.75)" stroke-width="12" stroke-linecap="round"/>
+</svg>
