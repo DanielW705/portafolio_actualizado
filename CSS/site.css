@@ -116,6 +116,9 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 .cuerpo .vista .article .cuerpo_panel .fondo {
   position: absolute;
@@ -136,10 +139,83 @@ body {
   height: 100%;
   transform: rotate(180deg);
 }
+/*Estilo para todas las opcioens en general */
+
+.cuerpo .vista .article .cabecera_pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpo .vista .article .cabecera_pagina .area_navegacion {
+  width: 70%;
+  height: 100%;
+}
+.cuerpo .vista .article .cabecera_pagina .area_navegacion .lista_componentes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 5%;
+}
+
+/* Este estilo, le da color, sombra, etc a la barrita que selecciona en que opcion esta */
+
+.cuerpo
+  .vista
+  .article
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionador {
+  position: absolute;
+  /* left: 3%; */
+  content: " ";
+  border-bottom: 3px solid rgba(138, 217, 234, 0.85);
+  top: 75%;
+  width: 15%;
+  box-shadow: 0 -4px 10px 1px rgba(138, 217, 234, 0.85);
+}
+
+.cuerpo
+  .vista
+  .article
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  li {
+  list-style: none;
+}
+
+/*Este estilo le quita el decorado de lista y permite que el cursor sea puntero  */
+
+.cuerpo
+  .vista
+  .article
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  .opcion {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.cuerpo
+  .vista
+  .article
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionado {
+  color: #8ad9ea;
+  /* box-shadow: 0 10px 20px rgba(138, 217, 234, 0.45); */
+}
 
 /* Estilos para presentacion */
 .cuerpo .vista .presentacion {
-  left: 0%;
+  left: -125%;
 }
 /*Estilos para la cabecera de la pagina de presentacion */
 .cuerpo .vista .presentacion .cabecera_presentacion {
@@ -182,11 +258,9 @@ body {
 
 /*Distribucion del cuerpo, en la presentacion */
 .cuerpo .vista .presentacion .cuerpo_panel {
-  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 17.5%) 30%;
   justify-items: center;
-  align-items: center;
   padding: 5% 0 0 2%;
 }
 
@@ -294,7 +368,7 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   align-items: center;
   gap: 5%;
@@ -308,7 +382,7 @@ body {
   .lista_componentes
   .seleccionador {
   position: absolute;
-  left: 3%;
+  left: 0.4%;
   content: " ";
   border-bottom: 3px solid rgba(138, 217, 234, 0.85);
   top: 75%;
@@ -346,15 +420,214 @@ body {
 }
 /* Estilos para informacion */
 .cuerpo .vista .informacion {
-  left: 125%;
+  left: -125%;
+}
+
+/*Con estos estilos, podemos mover la barrita inferior que seleccopma dpmde esta el usuario */
+.cuerpo
+  .vista
+  .informacion
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionador {
+  left: 29.2%;
+}
+
+/* Estilo de la tarjeta central, lo dividimos en cuadriculas         */
+.cuerpo .vista .informacion .cuerpo_panel .card {
+  width: 60%;
+  height: 50%;
+  background-color: #232323;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 10% 90%;
+  align-items: center;
+  justify-items: center;
+  padding: 2%;
+  row-gap: 1%;
+}
+/* Con este estilo el titulo se coloca correctamente */
+.cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre {
+  width: 100%;
+  height: 100%;
+  grid-column: 2 span;
+  font-family: "Anonymus Pro";
+  justify-self: start;
+  font-size: 3em;
+}
+.cuerpo .vista .informacion .cuerpo_panel .card .portrait {
+  width: 75%;
+  height: 75%;
+  background-color: red;
+}
+.cuerpo .vista .informacion .cuerpo_panel .card .message {
+  text-align: justify;
+  font-size: 2.1em;
+}
+
+/*Con este estilo se mueve la barra del seleccionador  */
+.cuerpo
+  .vista
+  .informacion
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionador {
+  left: 21.5%;
 }
 /* Estilos para proyectos */
 .cuerpo .vista .proyectos {
-  left: 250%;
+  left: 125%;
+}
+
+/*Este estilo dividira en 3 pedazos el cuerpo completo para poder hacer las tarjetas  */
+.cuerpo .vista .proyectos .cuerpo_panel {
+  grid-template-columns: repeat(3, 1fr);
+}
+/*Con este se va a hacer cada una de las tarjetas  */
+.cuerpo .vista .proyectos .cuerpo_panel .card {
+  width: 80%;
+  height: 73.6%;
+  background-color: #383f51;
+  border-radius: 1px 1px 10px 10px;
+  display: grid;
+  grid-template-rows: 40% 10% 20% 15% 15%;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 2px 12px 20px rgba(138, 217, 234, 0.5);
+}
+/*Con este estilo se realizara la presentacion de cada tarjeta  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .imagen_presentacion {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-bottom: 3px solid rgba(138, 217, 234, 0.85);
+  border-radius: 1px 1px 0px 0px;
+}
+
+/*Estilos para el titulo de la tarjeta  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .title {
+  font-family: "Anonymus Pro";
+  justify-self: start;
+  font-size: 1.5em;
+  padding-left: 3%;
+}
+.cuerpo .vista .proyectos .cuerpo_panel .card .descripcion {
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  padding: 0 3%;
+  font-size: 1.2em;
+}
+/*Estilos para el panel donde se muestran todos las tarjetas de los lenguajes*/
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+/*El estilo de cada uno de las tarjetas */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card {
+  width: 90%;
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1em;
+  gap: 5%;
+}
+/*Estilo para el texto al interior de la tarjeta */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Estilo para los iconos de html y css en las tarjetas  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .html .icon,
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .css .icon {
+  width: 25%;
+  height: 65%;
+}
+/*Estilo para los textos de las tarjetas de html y css  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .html .text,
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .css .text {
+  width: 40%;
+  height: 100%;
+  font-size: 1.2em;
+}
+/*Estilo para el icono de C# */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .c_sharp .icon {
+  width: 25%;
+  height: 55%;
+}
+/*Estilo para el texto de la tarjeta de C# */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .c_sharp .text {
+  width: 55%;
+  height: 100%;
+}
+/*Estilo para el icono de JS  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .js .icon {
+  width: 25%;
+  height: 55%;
+}
+/* .cuerpo .vista .proyectos .cuerpo_panel .card .cards .js .text {
+} */
+/*Estilo para el color de fondo de la tarjeta de C#*/
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .c_sharp {
+  background-color: #230068;
+}
+/*Estilo para el color de fondo para la tarjeta de html  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .html {
+  background-color: #dd4b25;
+}
+/*Estilo para el color de fondo para la tarjeta de css */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .css {
+  background-color: #254bdd;
+}
+/*Estilo para el color de fondo para la tarjeta de CSS  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .cards .js {
+  background-color: #323330;
+  font-size: 0.8em;
+}
+/*Estilos para la tarjeta con 3 tarjetitas  */
+.cuerpo .vista .proyectos .cuerpo_panel ._3 .cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Cambio en el tamaño de los iconos */
+.cuerpo .vista .proyectos .cuerpo_panel ._3 .cards .icon_card {
+  width: 75%;
+  height: 50%;
+}
+/*Estilos del area de los iconos  */
+.cuerpo .vista .proyectos .cuerpo_panel .card .link_area {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: row;
+}
+/*Estilos de la ancla  */
+.cuerpo .vista .proyectos .cuerpo_panel .card ._link {
+  width: 10%;
+  height: 50%;
+  cursor: pointer;
+  z-index: 1;
+  justify-self: start;
+  margin-left: 5%;
+}
+/*Estilos del icono  */
+.cuerpo .vista .proyectos .cuerpo_panel .card ._link img {
+  width: 100%;
+  height: 100%;
 }
 /* Estilos para habilidades */
 .cuerpo .vista .habilidades {
-  left: 375%;
+  left: 0%;
 }
 /* Estilos para contacto */
 .cuerpo .vista .contacto {
