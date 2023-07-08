@@ -438,7 +438,7 @@ body {
 .cuerpo .vista .informacion .cuerpo_panel .card {
   width: 60%;
   height: 50%;
-  background-color: #232323;
+  background-color: rgba(35, 35, 35, 0.95);
   border-radius: 5px;
   display: grid;
   grid-template-columns: 35% 65%;
@@ -628,6 +628,126 @@ body {
 /* Estilos para habilidades */
 .cuerpo .vista .habilidades {
   left: 0%;
+}
+/*Estilo para mover la barra inferior */
+.cuerpo
+  .vista
+  .habilidades
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionador {
+  left: 63.25%;
+}
+/*Estilo para el cuerpo de las habilidades  */
+.cuerpo .vista .habilidades .cuerpo_panel {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+}
+/*Estilo para las columnas de las habilidades*/
+.cuerpo .vista .habilidades .cuerpo_panel .columna {
+  width: 65%;
+  height: 90%;
+  background-color: rgba(50, 51, 48, 0.25);
+  border-radius: 10px;
+  padding: 2%;
+  font-family: "Anonymus Pro";
+  font-size: 2.5em;
+  text-align: center;
+  display: grid;
+}
+/*Estilo para el interior de la primera columna  */
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5%;
+}
+/*Estilo para cada una de los renglones de la columna  */
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .tipo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+/*Estilo para el primer y segundo renglon, posicionamos los elementos  */
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .programacion,
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .maquetado {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+/*Estilo para el titulo del primer y segundo renglon  */
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .programacion .title,
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .maquetado .title {
+  grid-column: 2 span;
+}
+/*Estilo  para los iconos del primero y del segundo renglon  */
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .programacion .icon,
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .maquetado .icon {
+  width: 70%;
+  height: 70%;
+}
+/*Estilo para el  tercer renglon y que centre todos los objetos*/
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .estilizado {
+  justify-items: center;
+  align-items: center;
+}
+/*Estilo para el icono del tercer renglon  */
+.cuerpo .vista .habilidades .cuerpo_panel .lenguajes .estilizado .icon {
+  width: 50%;
+  height: 50%;
+}
+/*Estilos para que se pueda dividir en tabla el interior de la tercera columna  */
+.cuerpo .vista .habilidades .cuerpo_panel .frameworks {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 15% 42.5%;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5%;
+}
+/*Estilo para que el titulo abarque toda la fila  */
+.cuerpo .vista .habilidades .cuerpo_panel .frameworks .title {
+  grid-column: 2 span;
+}
+/*Estilos para acomodar el icono de dotnet  */
+.cuerpo .vista .habilidades .cuerpo_panel .frameworks .dotnet {
+  width: 75%;
+  height: 45%;
+  align-self: flex-start;
+}
+/*Estilos para acomodar el icono de bootstrap  */
+.cuerpo .vista .habilidades .cuerpo_panel .frameworks .bootstrap {
+  width: 70%;
+  height: 70%;
+  align-self: flex-end;
+}
+.cuerpo .vista .habilidades .cuerpo_panel .herramientas {
+  grid-template-rows: 15% repeat(2, 42.5%);
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.cuerpo .vista .habilidades .cuerpo_panel .herramientas .title {
+  grid-column: 2 span;
+}
+.cuerpo .vista .habilidades .cuerpo_panel .herramientas .github {
+  width: 60%;
+  height: 35%;
+  position: relative;
+  bottom: 20%;
+}
+.cuerpo .vista .habilidades .cuerpo_panel .herramientas .git {
+  width: 60%;
+  height: 60%;
+  align-self: flex-end;
+}
+.cuerpo .vista .habilidades .cuerpo_panel .herramientas .figma {
+  width: 60%;
+  height: 60%;
+  align-self: flex-start;
 }
 /* Estilos para contacto */
 .cuerpo .vista .contacto {
