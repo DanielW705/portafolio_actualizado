@@ -627,7 +627,7 @@ body {
 }
 /* Estilos para habilidades */
 .cuerpo .vista .habilidades {
-  left: 0%;
+  left: 125%;
 }
 /*Estilo para mover la barra inferior */
 .cuerpo
@@ -724,26 +724,31 @@ body {
   height: 70%;
   align-self: flex-end;
 }
+/*Estilos para acomodar la tercera columna  */
 .cuerpo .vista .habilidades .cuerpo_panel .herramientas {
   grid-template-rows: 15% repeat(2, 42.5%);
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
 }
+/*Estilos para agrandar el texto de la tercera columna  */
 .cuerpo .vista .habilidades .cuerpo_panel .herramientas .title {
   grid-column: 2 span;
 }
+/*Estilos para el icono de github  */
 .cuerpo .vista .habilidades .cuerpo_panel .herramientas .github {
   width: 60%;
   height: 35%;
   position: relative;
   bottom: 20%;
 }
+/*Estilos para agrandar el icono de git  */
 .cuerpo .vista .habilidades .cuerpo_panel .herramientas .git {
   width: 60%;
   height: 60%;
   align-self: flex-end;
 }
+/*Estilos para agrandar el icono de figma  */
 .cuerpo .vista .habilidades .cuerpo_panel .herramientas .figma {
   width: 60%;
   height: 60%;
@@ -751,5 +756,41 @@ body {
 }
 /* Estilos para contacto */
 .cuerpo .vista .contacto {
-  left: 500%;
+  left: 0%;
+}
+/*Estilos para el seleccionador  */
+.cuerpo
+  .vista
+  .contacto
+  .cabecera_pagina
+  .area_navegacion
+  .lista_componentes
+  .seleccionador {
+  left: 84.25%;
+}
+
+.cuerpo .vista .contacto .contact_card {
+  width: 70%;
+  height: 50%;
+  background: rgba(35, 35, 35, 0.85);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 15% 45% 20%;
+  justify-items: center;
+  align-items: center;
+}
+.cuerpo .vista .contacto .contact_card .text {
+  grid-column: 3 span;
+  font-size: 1.8em;
+}
+.cuerpo .vista .contacto .contact_card .icon {
+  width: 75%;
+  height: 75%;
+}
+.cuerpo .vista .contacto .contact_card .link {
+  color: #8ad9ea;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
 }
