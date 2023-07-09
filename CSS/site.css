@@ -38,6 +38,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 /*estilos para limitar la vista */
 .cuerpo .vista {
@@ -47,7 +49,7 @@ body {
   height: 85%;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 /***Pantalla de cada uno de los articulos***/
 .cuerpo .vista .article {
@@ -59,6 +61,7 @@ body {
   display: grid;
   grid-template-rows: 10% 80% 10%;
   grid-template-columns: 1fr;
+  scroll-snap-align: center;
 }
 /*Estilos para todas las cabeceras  */
 .cuerpo .vista .article .cabecera_pagina {
@@ -215,7 +218,7 @@ body {
 
 /* Estilos para presentacion */
 .cuerpo .vista .presentacion {
-  left: -125%;
+  left: 0%;
 }
 /*Estilos para la cabecera de la pagina de presentacion */
 .cuerpo .vista .presentacion .cabecera_presentacion {
@@ -319,6 +322,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0.5%;
+  z-index: 1;
 }
 /*Estilizado del tamaño del espacio interior del boton  */
 .cuerpo
@@ -420,7 +424,7 @@ body {
 }
 /* Estilos para informacion */
 .cuerpo .vista .informacion {
-  left: -125%;
+  left: 125%;
 }
 
 /*Con estos estilos, podemos mover la barrita inferior que seleccopma dpmde esta el usuario */
@@ -479,7 +483,7 @@ body {
 }
 /* Estilos para proyectos */
 .cuerpo .vista .proyectos {
-  left: 125%;
+  left: 250%;
 }
 
 /*Este estilo dividira en 3 pedazos el cuerpo completo para poder hacer las tarjetas  */
@@ -627,7 +631,7 @@ body {
 }
 /* Estilos para habilidades */
 .cuerpo .vista .habilidades {
-  left: 125%;
+  left: 375%;
 }
 /*Estilo para mover la barra inferior */
 .cuerpo
@@ -756,7 +760,7 @@ body {
 }
 /* Estilos para contacto */
 .cuerpo .vista .contacto {
-  left: 0%;
+  left: 500%;
 }
 /*Estilos para el seleccionador  */
 .cuerpo
