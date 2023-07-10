@@ -17,12 +17,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*DAndole el tamaño y la letra a los fondos  */
 body {
   font-family: "Anonymus Pro Bold", "Anonymus Pro", Arial;
   font-size: 1rem;
 }
+/*Evitar que las ancals no funcionen  */
 /* Fondo personalizado con particles js */
-
 #particles-js {
   background-color: #0e0e0e;
   background-size: cover;
@@ -289,6 +290,8 @@ body {
 /*Estilizado del color del texto*/
 .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto .link_correo {
   color: #8ad9ea;
+  cursor: pointer;
+  position: relative;
 }
 /*Estilizado cuando es visitado*/
 .cuerpo
@@ -568,7 +571,7 @@ body {
 /*Estilo para el icono de C# */
 .cuerpo .vista .proyectos .cuerpo_panel .card .cards .c_sharp .icon {
   width: 25%;
-  height: 55%;
+  height: 60%;
 }
 /*Estilo para el texto de la tarjeta de C# */
 .cuerpo .vista .proyectos .cuerpo_panel .card .cards .c_sharp .text {
@@ -623,6 +626,9 @@ body {
   z-index: 1;
   justify-self: start;
   margin-left: 5%;
+}
+.cuerpo .vista .proyectos .cuerpo_panel .card ._link:hover img {
+  fill: rgba(0, 187, 45, 0.9);
 }
 /*Estilos del icono  */
 .cuerpo .vista .proyectos .cuerpo_panel .card ._link img {
