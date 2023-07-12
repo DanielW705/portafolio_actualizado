@@ -1210,7 +1210,7 @@ body {
 }
 
 /*Pantallas con alturas pequeñas*/
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 900px) {
   body {
     font-size: 0.8rem;
   }
@@ -1322,7 +1322,7 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 64%;
+    left: 64.5%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
     gap: 0;
@@ -1337,7 +1337,7 @@ body {
     height: 45%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .herramientas .github {
-    width: 60%;
+    width: 65%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .columna {
     font-size: 1.5rem;
