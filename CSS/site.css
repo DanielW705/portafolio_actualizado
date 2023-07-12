@@ -1189,199 +1189,33 @@ body {
     width: 75%;
   }
 }
-/*Dando adaptabilidad para dispositivos celulares*/
-@media only screen and (max-width: 854px) {
-  body {
-    font-size: 0.7rem;
-  }
-  .cuerpo
-    .vista
-    .article
-    .cabecera_pagina
-    .area_navegacion
-    .lista_componentes
-    .opcion {
-    font-size: 0.8rem;
-  }
-  .cuerpo .vista .presentacion .cabecera_pagina .cuerpo_boton {
-    border-radius: 5px;
-  }
-  .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
-    font-size: 2.8rem;
-  }
-  .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
-    font-size: 1.2rem;
-  }
-  .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
-    font-size: 1.4rem;
-  }
-  .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
-    font-size: 0.9rem;
-  }
-  .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
-    font-size: 1.2rem;
-  }
-  .cuerpo .vista .presentacion .cuerpo_panel .area_boton .boton_descarga {
-    border-width: 4px;
-  }
-  .cuerpo
-    .vista
-    .presentacion
-    .pie_de_pagina
-    .area_navegacion
-    .lista_componentes
-    .seleccionador {
-    left: -0.5%;
-    width: 18%;
-  }
-  .cuerpo
-    .vista
-    .presentacion
-    .pie_de_pagina
-    .area_navegacion
-    .lista_componentes
-    .opcion {
-    font-size: 0.8rem;
-  }
-  .cuerpo .vista .informacion .cuerpo_panel .card {
-    width: 70%;
-    height: 55%;
-  }
-  .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre {
-    font-size: 1.4rem;
-  }
-  .cuerpo .vista .informacion .cuerpo_panel .card .message {
-    font-size: 0.8rem;
-  }
-  .cuerpo .vista .informacion .cuerpo_panel .card .portrait {
-    width: 80%;
-    height: 80%;
-    font-size: 0.7rem;
-  }
-  .cuerpo
-    .vista
-    .informacion
-    .cabecera_pagina
-    .area_navegacion
-    .lista_componentes
-    .seleccionador {
-    left: 22.7%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card {
-    height: 90%;
-    grid-template-rows: 35% 10% 25% 10% 20%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .title {
-    font-size: 1rem;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .descripcion {
-    font-size: 0.6rem;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel ._2 .descripcion {
-    font-size: 0.5rem;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card {
-    width: 70%;
-    height: 70%;
-    border-radius: 3px;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .c_sharp .icon {
-    width: 40%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .html .icon,
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .css .icon {
-    width: 35%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .js .icon {
-    width: 40%;
-    height: 60%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card .text {
+/*Forzando a girar la pantalla*/
+@media screen and (max-width: 854px) and (orientation: portrait) {
+  .cuerpo {
     display: none;
   }
-  .cuerpo .vista .proyectos .cuerpo_panel ._3 .cards .html .icon,
-  .cuerpo .vista .proyectos .cuerpo_panel ._3 .cards .css .icon {
-    width: 30%;
-    height: 60%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .js .icon {
-    width: 35%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card ._link {
-    width: 12%;
-    height: 35%;
-  }
-
-  /* .cuerpo .vista .proyectos .cuerpo_panel .card .cards .html .text,
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .css .text {
-    font-size: 0.7rem;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .js {
-    font-size: 0.4rem;
-  } */
-  .cuerpo .vista .habilidades .cuerpo_panel .columna {
-    width: 80%;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .programacion .icon,
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .maquetado .icon {
-    width: 60%;
-    height: 60%;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .estilizado .icon {
-    width: 45%;
-    height: 45%;
-  }
-
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .estilizado {
+  body::before {
+    position: fixed;
+    width: 100%;
     height: 100%;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
-    gap: 0;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .columna {
-    font-size: 1rem;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .frameworks {
+    content: "Volte el dispositivo para ver el contenido";
     padding: 0 3%;
-  }
-  .cuerpo
-    .vista
-    .habilidades
-    .cabecera_pagina
-    .area_navegacion
-    .lista_componentes
-    .seleccionador {
-    left: 63.9%;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .herramientas .github {
-    width: 60%;
-    height: 35%;
-  }
-  .cuerpo .vista .contacto .contact_card {
-    width: 85%;
-    height: 65%;
-  }
-  .cuerpo .vista .contacto .contact_card .text {
-    font-size: 0.8rem;
-    padding-left: 2%;
-    padding-top: 2%;
-  }
-  .cuerpo .vista .contacto .contact_card .link {
-    font-size: 0.8rem;
-  }
-  .cuerpo
-    .vista
-    .contacto
-    .cabecera_pagina
-    .area_navegacion
-    .lista_componentes
-    .seleccionador {
-    left: 84.5%;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
-@media only screen and (max-width: 640px) {
+
+/*Pantallas con alturas pequeñas*/
+@media only screen and (max-height: 700px) {
   body {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .cuerpo .vista {
+    width: 70%;
   }
   .cuerpo
     .vista
@@ -1390,26 +1224,26 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 0.6rem;
+    font-size: 1.3rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
-    font-size: 0.6rem;
+    font-size: 1.3rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton .boton_descarga {
-    border-width: 3px;
-    height: 75%;
+    height: 70%;
+    border-width: 6px;
   }
   .cuerpo
     .vista
@@ -1418,9 +1252,8 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: -0.2%;
+    left: -0.1%;
     width: 18%;
-    border-width: 2px;
   }
   .cuerpo
     .vista
@@ -1429,22 +1262,20 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 0.6rem;
+    font-size: 1.3rem;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card {
-    width: 80%;
-    height: 70%;
+    width: 75%;
+    height: 60%;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre {
-    font-size: 1.2rem;
+    font-size: 2.3rem;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .message {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .portrait {
-    width: 80%;
-    height: 80%;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .cuerpo
     .vista
@@ -1456,65 +1287,33 @@ body {
     left: 22.5%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card {
-    grid-template-rows: 20% 35% 25% 20%;
-  }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .imagen_presentacion {
-    display: none;
+    height: 85%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .title {
-    font-size: 0.8rem;
-    width: 100%;
-    text-align: center;
+    font-size: 1.4rem;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .descripcion {
-    font-size: 0.5rem;
+    font-size: 0.85rem;
   }
-
-  .cuerpo .vista .proyectos .cuerpo_panel .card ._link {
-    width: 13%;
-    height: 55%;
+  .cuerpo .vista .proyectos .cuerpo_panel ._2 .descripcion {
+    font-size: 0.75rem;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card {
-    width: 80%;
-    height: 50%;
+    width: 75%;
+    height: 75%;
   }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .c_sharp .icon {
+  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card .icon {
+    width: 50%;
+  }
+  .cuerpo .vista .proyectos .cuerpo_panel ._3 .cards .icon_card .icon {
     width: 45%;
   }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .html .icon,
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .css .icon {
-    width: 40%;
+  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card .text {
+    display: none;
   }
-  .cuerpo .vista .proyectos .cuerpo_panel .card .cards .js .icon {
-    width: 40%;
-    height: 55%;
-  }
-
   .cuerpo .vista .proyectos .cuerpo_panel .card ._link {
     width: 18%;
-  }
-
-  .cuerpo .vista .habilidades .cuerpo_panel .columna {
-    width: 80%;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .programacion .icon,
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .maquetado .icon {
-    width: 65%;
-    height: 65%;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .estilizado .icon {
-    width: 45%;
-    height: 45%;
-  }
-
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .estilizado {
-    height: 100%;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
-    gap: 0;
-  }
-  .cuerpo .vista .habilidades .cuerpo_panel .columna {
-    font-size: 0.8rem;
+    height: 70%;
   }
   .cuerpo
     .vista
@@ -1523,21 +1322,33 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 63.75%;
+    left: 64%;
+  }
+  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
+    gap: 0;
+  }
+  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .programacion .icon,
+  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .maquetado .icon {
+    width: 55%;
+    height: 55%;
+  }
+  .cuerpo .vista .habilidades .cuerpo_panel .lenguajes .estilizado .icon {
+    width: 45%;
+    height: 45%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .herramientas .github {
     width: 60%;
-    height: 35%;
   }
-  .cuerpo .vista .contacto .contact_card {
-    width: 85%;
-    height: 65%;
+  .cuerpo .vista .habilidades .cuerpo_panel .columna {
+    font-size: 1.5rem;
   }
   .cuerpo .vista .contacto .contact_card .text {
-    font-size: 0.6rem;
-    padding-left: 1%;
+    font-size: 1rem;
   }
   .cuerpo .vista .contacto .contact_card .link {
-    font-size: 0.6rem;
+    font-size: 1rem;
+  }
+  .cuerpo .vista .habilidades .cuerpo_panel .columna {
+    width: 75%;
   }
 }
