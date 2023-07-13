@@ -1210,7 +1210,7 @@ body {
 }
 
 /*Pantallas con alturas pequeñas*/
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 900px) and (orientation: landscape) {
   body {
     font-size: 0.8rem;
   }
@@ -1224,24 +1224,25 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 1.3rem;
+    font-size: 140%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
-    font-size: 4rem;
+    font-size: 450%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
-    font-size: 1.8rem;
+    font-size: 180%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
-    font-size: 2rem;
+    font-size: 200%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
-    font-size: 1.3rem;
+    font-size: 150%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
-    font-size: 2rem;
+    font-size: 250%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton .boton_descarga {
+    width: 40%;
     height: 70%;
     border-width: 6px;
   }
@@ -1252,7 +1253,7 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: -0.1%;
+    left: 0%;
     width: 18%;
   }
   .cuerpo
@@ -1262,20 +1263,22 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 1.3rem;
+    font-size: 140%;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card {
     width: 75%;
     height: 60%;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre {
-    font-size: 2.3rem;
+    font-size: 300%;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .message {
-    font-size: 1.5rem;
+    font-size: 170%;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .portrait {
-    font-size: 1.2rem;
+    width: 80%;
+    height: 80%;
+    font-size: 120%;
   }
   .cuerpo
     .vista
@@ -1284,19 +1287,19 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 22.5%;
+    left: 23.5%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card {
-    height: 85%;
+    height: 75%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .title {
-    font-size: 1.4rem;
+    font-size: 170%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .descripcion {
-    font-size: 0.85rem;
+    font-size: 95%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel ._2 .descripcion {
-    font-size: 0.75rem;
+    font-size: 90%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card {
     width: 75%;
@@ -1322,7 +1325,7 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 64.5%;
+    left: 64%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
     gap: 0;
@@ -1340,20 +1343,20 @@ body {
     width: 65%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .columna {
-    font-size: 1.5rem;
+    font-size: 200%;
   }
   .cuerpo .vista .contacto .contact_card .text {
-    font-size: 1rem;
+    font-size: 120%;
   }
   .cuerpo .vista .contacto .contact_card .link {
-    font-size: 1rem;
+    font-size: 100%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .columna {
     width: 75%;
   }
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 500px) and (orientation: landscape) {
   body {
     font-size: 1rem;
   }
