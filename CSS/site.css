@@ -17,13 +17,90 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* h1,
+h5,
+p,
+a {
+  display: block;
+  overflow: hidden;
+} */
 /*Estilos para una pantalla 4K  */
 /*Dandole el tamaño y la letra a los fondos  */
 body {
   font-family: "Anonymus Pro Bold", "Anonymus Pro", Arial;
   font-size: 5rem;
 }
-/*Evitar que las ancals no funcionen  */
+/*animaciones  */
+/*Animacion para escritura completa */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+/*Animacion para tipado azul  */
+@keyframes blink_blue {
+  50% {
+    border-right: 10px solid #8ad9ea;
+  }
+}
+/*Animacion para tipado azul  */
+@keyframes blink_white {
+  50% {
+    border-right: 10px solid white;
+  }
+}
+/*Animacion para cuerpo incompleto  */
+@keyframes typing_incomplete {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 68%;
+  }
+}
+/*Animacion para cuerpo completo  */
+@keyframes typing_completed {
+  0% {
+    width: 68%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*Texto oculto  */
+.hidden_text {
+  width: 0 !important;
+  overflow: hidden;
+}
+/*Animacion para texto en blanco  */
+.text_animated_text_white {
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  animation: typing 1.5s steps(20), blink_white 0.3s infinite step-end alternate;
+}
+/*animacion para texto en azul*/
+.text_animated_text_blue {
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  animation: typing 1.5s steps(20), blink_blue 0.3s infinite step-end alternate;
+}
+
+/*Animacion para texto blanco incompleto  */
+.text_animated_text_white_incomplete {
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  animation: typing_incomplete 1.5s steps(20) 0s,
+    blink_white 0.3s infinite step-end alternate 0s,
+    typing_completed 1.5s steps(20) 1.5s,
+    blink_blue 0.3s infinite step-end alternate 1.5s;
+}
+.stop_animation {
+  animation-play-state: paused;
+  border-right: none !important;
+}
 /* Fondo personalizado con particles js */
 #particles-js {
   background-color: #0e0e0e;
@@ -44,6 +121,7 @@ body {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
 }
+
 /*estilos para limitar la vista */
 .cuerpo .vista {
   position: relative;
@@ -67,6 +145,7 @@ body {
   scroll-snap-align: center;
 }
 /*Estilos para todas las cabeceras  */
+
 .cuerpo .vista .article .cabecera_pagina {
   /* border-top: 5px rgba(124, 192, 236, 0.75) solid; */
 
@@ -223,6 +302,18 @@ body {
 .cuerpo .vista .presentacion {
   left: 0%;
 }
+.cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
+  width: 65%;
+}
+.cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
+  width: 27%;
+}
+.cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
+  width: 57%;
+}
+.cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
+  width: 96%;
+}
 /*Estilos para la cabecera de la pagina de presentacion */
 .cuerpo .vista .presentacion .cabecera_presentacion {
   display: grid;
@@ -260,6 +351,18 @@ body {
 .cuerpo .vista .presentacion .cabecera_pagina .cuerpo_boton:hover {
   box-shadow: 0.1px -12px 12px -3px #38627b inset;
   transform: scale(1.2);
+}
+/*Distribucion de las opciones inferiores*/
+.cuerpo
+  .vista
+  .presentacion
+  .pie_de_pagina
+  .area_navegacion
+  .lista_componentes
+  .opcion {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
 }
 
 /*Distribucion del cuerpo, en la presentacion */
@@ -856,7 +959,7 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 0.2%;
+    left: -1.2%;
     width: 18%;
   }
   .cuerpo
@@ -866,7 +969,7 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre {
     font-size: 3rem;
