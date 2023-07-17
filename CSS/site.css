@@ -60,11 +60,14 @@ body {
 }
 /*Animacion para cuerpo completo  */
 @keyframes typing_completed {
-  0% {
+  /* 0% {
     width: 68%;
   }
   100% {
     width: 100%;
+  } */
+  from {
+    width: 68%;
   }
 }
 /*Texto oculto  */
@@ -303,16 +306,16 @@ body {
   left: 0%;
 }
 .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
-  width: 65%;
+  width: 85%;
 }
 .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
-  width: 27%;
+  width: 42%;
 }
 .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
-  width: 57%;
+  width: 66%;
 }
 .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
-  width: 96%;
+  width: 97%;
 }
 /*Estilos para la cabecera de la pagina de presentacion */
 .cuerpo .vista .presentacion .cabecera_presentacion {
@@ -517,7 +520,7 @@ body {
   .area_navegacion
   .lista_componentes
   .opcion {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   cursor: pointer;
 }
 .cuerpo
@@ -935,16 +938,20 @@ body {
     font-size: 2.5rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
+    width: 64%;
     font-size: 6rem;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
     font-size: 2rem;
+    width: 27%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
     font-size: 2.5rem;
+    width: 43%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
     font-size: 2.6rem;
+    width: 96.5%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
     font-size: 3rem;
@@ -1057,15 +1064,19 @@ body {
   }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
     font-size: 5rem;
+    width: 70%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
-    font-size: 2.8rem;
+    font-size: 2rem;
+    width: 34%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
     font-size: 2.5rem;
+    width: 75%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
     font-size: 2rem;
+    width: 97%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
     font-size: 2.5rem;
@@ -1081,7 +1092,7 @@ body {
     .lista_componentes
     .seleccionador {
     left: 0.3%;
-    width: 17%;
+    width: 15%;
   }
   .cuerpo
     .vista
@@ -1090,7 +1101,7 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card {
     width: 70%;
@@ -1175,15 +1186,19 @@ body {
   }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
     font-size: 4rem;
+    width: 84%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
     font-size: 1.8rem;
+    width: 47%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
     font-size: 2rem;
+    width: 90%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
     font-size: 1.3rem;
+    width: 95%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
     font-size: 2rem;
@@ -1200,7 +1215,7 @@ body {
     .lista_componentes
     .seleccionador {
     left: 0.5%;
-    width: 18%;
+    width: 15%;
   }
   .cuerpo
     .vista
@@ -1209,7 +1224,7 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card {
     width: 75%;
@@ -1313,7 +1328,7 @@ body {
 }
 
 /*Pantallas con alturas pequeñas*/
-@media only screen and (max-height: 900px) and (orientation: landscape) {
+@media only screen and (max-height: 900px) and (min-width: 1281px) and (orientation: landscape) {
   body {
     font-size: 0.8rem;
   }
@@ -1329,6 +1344,15 @@ body {
     .opcion {
     font-size: 140%;
   }
+  .cuerpo
+    .vista
+    .article
+    .cabecera_pagina
+    .area_navegacion
+    .lista_componentes
+    .seleccionador {
+    width: 12%;
+  }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
     font-size: 450%;
   }
@@ -1337,8 +1361,10 @@ body {
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
     font-size: 200%;
+    width: 66%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
+    width: 80%;
     font-size: 150%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
@@ -1357,7 +1383,7 @@ body {
     .lista_componentes
     .seleccionador {
     left: 0%;
-    width: 18%;
+    width: 16%;
   }
   .cuerpo
     .vista
@@ -1390,7 +1416,16 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 23.5%;
+    left: 23%;
+  }
+  .cuerpo
+    .vista
+    .proyectos
+    .cabecera_pagina
+    .area_navegacion
+    .lista_componentes
+    .seleccionador {
+    left: 44.3%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card {
     height: 75%;
@@ -1428,7 +1463,16 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 64%;
+    left: 65%;
+  }
+  .cuerpo
+    .vista
+    .contacto
+    .cabecera_pagina
+    .area_navegacion
+    .lista_componentes
+    .seleccionador {
+    left: 86%;
   }
   .cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
     gap: 0;
