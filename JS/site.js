@@ -4,18 +4,17 @@
   particlesJS.load("particles-js", "./JS/assets/particlesjs-config.json");
 
   let animated_element = document.querySelector(".nombre_titulo");
-
   let to_animated_elements = document.querySelectorAll(
-    ".cuerpo .vista .presentacion .cuerpo_panel p, .cuerpo .vista .presentacion .pie_de_pagina .area_navegacion .lista_componentes .opcion"
+    ".cuerpo .vista .presentacion .cuerpo_panel p, .cuerpo .vista .presentacion .pie_de_pagina .area_navegacion .lista_componentes .opcion, .cuerpo .vista .informacion .cabecera_pagina .area_navegacion .lista_componentes .opcion, .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre, .cuerpo .vista .informacion .cuerpo_panel .card .message span"
   );
-
   const recursividad_antiparalelismo = async (i) => {
     await sleep(1000);
+    console.log(i);
     if (i < to_animated_elements.length) {
       let elemento_actual = to_animated_elements[i];
       elemento_actual.classList.remove("hidden_text");
       elemento_actual.classList.add(
-        elemento_actual.classList.contains("texto_contacto")
+          elemento_actual.classList.contains("texto_contacto")
           ? "text_animated_text_white_incomplete"
           : elemento_actual.classList.contains("seleccionado")
           ? "text_animated_text_blue"
@@ -29,7 +28,11 @@
           i++;
           recursividad_antiparalelismo(i);
         }
+        if (elemento_actual.tagName === "SPAN")
+          elemento_actual.classList.add("return_inline");
       });
+
+      console.log(elemento_actual.tagName);
     }
   };
 
