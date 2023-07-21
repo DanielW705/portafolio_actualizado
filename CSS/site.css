@@ -283,6 +283,7 @@ body {
   .lista_componentes
   li {
   list-style: none;
+  text-align: center;
 }
 
 /*Este estilo le quita el decorado de lista y permite que el cursor sea puntero  */
@@ -646,13 +647,26 @@ body {
   align-items: center;
   box-shadow: 2px 12px 20px rgba(138, 217, 234, 0.5);
 }
-/*Con este estilo se realizara la presentacion de cada tarjeta  */
+/*Con esta regla de estilo se presenta el cuerpo de la imagen del proyecto*/
 .cuerpo .vista .proyectos .cuerpo_panel .card .imagen_presentacion {
   width: 100%;
   height: 100%;
   background-color: white;
   border-bottom: 3px solid rgba(138, 217, 234, 0.85);
   border-radius: 1px 1px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Esta regla de  estilo se da tamaño a la imagen (funciona con la primera y tercera)*/
+.cuerpo .vista .proyectos .cuerpo_panel .card .imagen_presentacion .imagen {
+  width: 95%;
+  height: 95%;
+}
+
+.cuerpo .vista .proyectos .cuerpo_panel ._2 .imagen_presentacion .imagen {
+  width: 60%;
+  height: 75%;
 }
 
 /*Estilos para el titulo de la tarjeta  */
@@ -1070,7 +1084,7 @@ body {
     left: 84.5%;
   }
 }
-/*Dando estilizado para pantalla HD  */
+/*Actualizando las reglas para pantallas HD  */
 @media only screen and (max-width: 1920px) {
   body {
     font-size: 0.9rem;
@@ -1086,7 +1100,7 @@ body {
   }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
     font-size: 5rem;
-    width: 70%;
+    width: 75%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
     font-size: 2rem;
@@ -1148,10 +1162,10 @@ body {
     left: 23%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .descripcion {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .cards .icon_card {
     font-size: 0.8rem;
@@ -1190,6 +1204,64 @@ body {
   }
   .cuerpo .vista .habilidades .cuerpo_panel .lenguajes {
     gap: 0;
+  }
+}
+/*Tipo de pantalla FHD  */
+@media only screen and (max-width: 1366px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .cuerpo .vista {
+    width: 85%;
+  }
+  .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
+    width: 82%;
+    font-size: 4.25rem;
+  }
+  .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
+    width: 40%;
+    font-size: 1.75rem;
+  }
+  .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
+    font-size: 1.5rem;
+    width: 97%;
+  }
+  .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
+    font-size: 2rem;
+  }
+  .cuerpo .vista .presentacion .cuerpo_panel .area_boton .boton_descarga {
+    border-width: 5px;
+  }
+  .cuerpo
+    .vista
+    .presentacion
+    .pie_de_pagina
+    .area_navegacion
+    .lista_componentes
+    .opcion {
+    font-size: 1.2rem;
+  }
+  .cuerpo
+    .vista
+    .article
+    .cabecera_pagina
+    .area_navegacion
+    .lista_componentes
+    .opcion {
+    font-size: 1.2rem;
+  }
+  .cuerpo
+    .vista
+    .article
+    .cabecera_pagina
+    .area_navegacion
+    .lista_componentes
+    .seleccionador {
+    left: 21.5%;
   }
 }
 /*Estilos a 720p  */
@@ -1350,7 +1422,7 @@ body {
 }
 
 /*Pantallas con alturas pequeñas*/
-@media only screen and (max-height: 900px) and (min-width: 1281px) and (orientation: landscape) {
+@media only screen and (max-height: 900px) and (min-width: 1367px) and (orientation: landscape) {
   body {
     font-size: 0.8rem;
   }
