@@ -10,7 +10,7 @@
   
   // Se selecciona todos los elementos que se vana a animar
   let to_animated_elements = document.querySelectorAll(
-    ".cuerpo .vista .presentacion .cuerpo_panel p, .cuerpo .vista .presentacion .pie_de_pagina .area_navegacion .lista_componentes .opcion, .cuerpo .vista .informacion .cabecera_pagina .area_navegacion .lista_componentes .opcion, .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre, .cuerpo .vista .informacion .cuerpo_panel .card .message span, .cuerpo .vista .proyectos .cuerpo_panel .card .title, .cuerpo .vista .proyectos .cuerpo_panel .card .descripcion span"
+    ".cuerpo .vista .presentacion .cuerpo_panel p, .cuerpo .vista .presentacion .pie_de_pagina .area_navegacion .lista_componentes .opcion, .cuerpo .vista .informacion .cabecera_pagina .area_navegacion .lista_componentes .opcion, .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre, .cuerpo .vista .informacion .cuerpo_panel .card .message span"
   );
 
   // Se inicia una duncion que permite dormir el proceso de ejecucion
