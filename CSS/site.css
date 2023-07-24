@@ -683,6 +683,9 @@ body {
   padding: 0 3%;
   font-size: 2rem;
 }
+.cuerpo .vista .proyectos .cuerpo_panel .card .descripcion span {
+  display: inline-block;
+}
 /*Estilos para el panel donde se muestran todos las tarjetas de los lenguajes*/
 .cuerpo .vista .proyectos .cuerpo_panel .card .cards {
   width: 100%;
@@ -1089,6 +1092,9 @@ body {
   body {
     font-size: 0.9rem;
   }
+  .cuerpo .vista {
+    width: 84%;
+  }
   .cuerpo
     .vista
     .article
@@ -1096,23 +1102,23 @@ body {
     .area_navegacion
     .lista_componentes
     .opcion {
-    font-size: 1.8rem;
+    font-size: 180%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .nombre_titulo {
-    font-size: 5rem;
-    width: 75%;
+    font-size: 530%;
+    width: 69%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_presentacion {
-    font-size: 2rem;
-    width: 34%;
+    font-size: 225%;
+    width: 34.5%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .parrafo_posicion {
-    font-size: 2.5rem;
-    width: 75%;
+    font-size: 270%;
+    width: 72%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .texto_contacto {
-    font-size: 2rem;
-    width: 97%;
+    font-size: 215%;
+    width: 93%;
   }
   .cuerpo .vista .presentacion .cuerpo_panel .area_boton {
     font-size: 2.5rem;
@@ -1141,7 +1147,7 @@ body {
   }
   .cuerpo .vista .informacion .cuerpo_panel .card {
     width: 70%;
-    height: 55%;
+    height: 65%;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .titulo_nombre {
     font-size: 2.8rem;
@@ -1159,7 +1165,7 @@ body {
     .area_navegacion
     .lista_componentes
     .seleccionador {
-    left: 23%;
+    left: 21.5%;
   }
   .cuerpo .vista .proyectos .cuerpo_panel .card .title {
     font-size: 1.6rem;
@@ -1206,7 +1212,7 @@ body {
     gap: 0;
   }
 }
-/*Tipo de pantalla FHD  */
+/* Tipo de pantalla FHD 
 @media only screen and (max-width: 1366px) {
   body {
     font-size: 0.8rem;
@@ -1263,7 +1269,7 @@ body {
     .seleccionador {
     left: 21.5%;
   }
-}
+} */
 /*Estilos a 720p  */
 @media only screen and (max-width: 1280px) {
   body {
