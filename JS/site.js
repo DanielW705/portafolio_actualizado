@@ -16,7 +16,7 @@
   // Se inicia una duncion que permite dormir el proceso de ejecucion
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  console.log(to_animated_elements);
+  // console.log(to_animated_elements);
 
   // Una funcion que evita que se haga de manera paralela la asignacion de animaciones de golpe y animaar uno por uno los elementos html
   const recursividad_antiparalelismo = async (i) => {
