@@ -13,3 +13,4 @@ Este portafolio esta hecho para presentarme como becario en desarrollo web de ba
 - [ ] Mejorar las animaciones (agregar la linea de encendido de la pantalla).
 - [ ] Mejorar las animaciones (agregar la escritura en todos los textos).
 - [ ] Mejorar la animacion de escritura.
+- [ ] Mejorar los eventos como (hover, visited) de las anclas, agregarle color o lo que sea necesario

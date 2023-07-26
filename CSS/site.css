@@ -577,10 +577,11 @@ body {
   font-size: 5rem;
 }
 .cuerpo .vista .informacion .cuerpo_panel .card .portrait {
-  width: 75%;
-  height: 75%;
-  background-color: red;
+  width: 70%;
+  height: 85%;
+  background-color: rgba(251, 252, 252, 0.65);
   font-size: 5rem;
+  border-radius: 1000px;
 }
 .cuerpo .vista .informacion .cuerpo_panel .card .message {
   font-size: 3rem;
@@ -1150,6 +1151,8 @@ body {
     font-size: 1.8rem;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .portrait {
+    width: 75%;
+    height: 80%;
     font-size: 1.2rem;
   }
   .cuerpo
@@ -1441,7 +1444,7 @@ body {
     font-size: 170%;
   }
   .cuerpo .vista .informacion .cuerpo_panel .card .portrait {
-    width: 80%;
+    width: 70%;
     height: 80%;
     font-size: 120%;
   }
